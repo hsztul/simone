@@ -507,7 +507,7 @@ export default function Game() {
           <p className="text-white/60 font-space-grotesk">
             {isFreePlayMode 
               ? "Free Play Mode - Make some music!" 
-              : "Remember the pattern"}
+              : `${currentRound}/10 - Match the pattern to win.`}
           </p>
         </div>
 
@@ -527,19 +527,12 @@ export default function Game() {
               <div className="space-y-4 text-white/80 mb-6 font-space-grotesk">
                 <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-lg p-3 flex items-start space-x-2">
                   <span className="text-yellow-300 text-xl">🔊</span>
-                  <div>
-                    <span className="font-cabinet font-semibold text-yellow-300 block mb-1">Sound Check!</span>
-                    <span className="text-sm text-yellow-100/90">
-                      This game features music and sound effects. Please check your volume before starting!
-                    </span>
-                  </div>
+                  <p className="text-sm text-yellow-100/90">
+                    Please check your volume before starting
+                  </p>
                 </div>
-                <p>
-                  Watch the pattern of colors and sounds, then repeat it back. The pattern gets longer each round.
-                </p>
-                <p className="text-sm border border-white/20 rounded-lg p-3 bg-white/5">
-                  <span className="font-cabinet font-semibold text-white block mb-1">🎮 Daily Challenge:</span>
-                  Every day has a unique pattern! Come back tomorrow for a new challenge and try to beat your daily high score.
+                <p className="text-lg">
+                  Match the pattern of colors and sounds. Get to level 10 to win today's puzzle!
                 </p>
               </div>
               <button
